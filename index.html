@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>Word Puzzle Adventure</b></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Word Puzzle Adventure</h1>
+        <div id="maze"></div>
+        <div id="puzzle" style="display:none;">
+            <p>Here’s where your puzzle will appear!</p>
+            <input type="text" id="answer" placeholder="Type your answer here">
+            <button id="submit">Submit</button>
+        </div>
+        <div id="controls">
+            <button onclick="movePlayer('up')">Up</button>
+            <button onclick="movePlayer('left')">Left</button>
+            <button onclick="movePlayer('down')">Down</button>
+            <button onclick="movePlayer('right')">Right</button>
+        </div>
+        <div id="progress"></div>
+        <div id="message"></div>
+        <div id="timer">Time Remaining: 60s</div>
+        <div id="score">Score: 0</div>
+        <div id="leaderboard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
